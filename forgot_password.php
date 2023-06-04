@@ -1,6 +1,7 @@
 
 <?php
 session_start();
+include 'config/db_connection.php';
 if(isset($_POST['submit_creds'])){
     if(empty($_POST["first_name"])){
         die("name is required");
@@ -27,7 +28,6 @@ if(isset($_POST['submit_creds'])){
                 $error="First name and Last name must be at least 2 charachters long";
             }
             else{
-                include_once  'db_connection.php';
                 $conn = OpenCon();
                 try{
                     $query1 = "SELECT user_id FROM  users_with_phone_and_school WHERE username='$username'and user_first_name='$first_name'and user_last_name='$last_name'and bday='$birth_date'and user_role='$user_type' and school_id=$schoolID  "; 
@@ -61,7 +61,7 @@ if(isset($_POST['submit_creds'])){
 <html>
 <head>
     <title>Forgot password</title>
-    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="stylesheet" type="text/css" href="teacher/styling.css">
 </head>
 <body>
     <div class="login-box">
@@ -89,7 +89,6 @@ if(isset($_POST['submit_creds'])){
             <select name="school" id="school" required>
             <option value="">Select School</option>
             <?php
-                include_once 'db_connection.php';
                 $conn = OpenCon();
                 $schools = "SELECT school_id, school_name FROM library";
                 $result = mysqli_query($conn, $schools);
