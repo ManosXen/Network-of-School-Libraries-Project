@@ -70,17 +70,18 @@ $less5 = mysqli_query($conn, $sqlu5);
                 </thead>
                 <tbody>
                     <?php
-                    while ($author = mysqli_fetch_assoc($less5)) {
+                    while ($author = mysqli_fetch_row($less5)) {
                         ?>
                         <tr>
-                            <td><?php echo $author['author_full_name']; ?></td>
-                            <td><?php echo $author['books']; ?></td>
+                            <td><?php echo $author[0]; ?></td>
+                            <td><?php echo $author[2]; ?></td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
         <?php } ?>
         <div>
+            <h2>Select a genre to view the authors with at least one book in the selected genre</h2>
             <form action="author_stats.php" method="post">
                 <label for="genre" class="inline-label">Genre: </label>
                 <select name="genre" id="genre" class="inline-input">
