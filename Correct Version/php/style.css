@@ -1,0 +1,617 @@
+body {
+	background-color: #1c1f2b;
+	color: #fff;
+	border-radius: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  title {
+	text-align: center;
+  }
+  
+  .login-box {
+	max-width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #2b2e3d;
+	padding: 40px;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+  }
+  
+  .login-box img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+  }
+  
+  .login-box h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 22px;
+	margin-bottom: 20px;
+  }
+  
+  .login-box p {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+  }
+
+  .logo {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 90px; 
+	height: 90px;
+	border-radius: 50%;
+  }
+  
+  .login-box input {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 20px;
+	width: 100%;
+  }
+  
+  .login-button {
+	border: 2px solid #fff;
+	outline: none;
+	height: 40px;
+	background: #2b2e3d;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	width: 100%;
+	cursor: pointer;
+	margin-top: 15px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	background-color: #2b2e3d;
+	padding: 0 20px; /* Adjusted padding */
+  }
+  
+  .login-button:hover {
+	background: #002ead;
+	color: #fff;
+	padding: 0 20px; /* Adjusted padding */
+	line-height: 40px; /* Added line-height */
+  }
+  
+  .login-box a:hover {
+	color: #ffc107;
+	border-radius: 20px;
+  }
+  
+  .login-box-school {
+	width: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #2b2e3d;
+	padding: 40px;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+  }
+  
+  .login-box-school-container {
+	overflow-y: auto;
+	max-height: calc(85vh - 100px); /* Adjust the height as needed, considering the menu height */
+  }
+  
+  .login-box-school img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+  }
+  
+  .login-box-school h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 22px;
+	margin-bottom: 20px;
+  }
+  
+  .login-box-school p {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+  }
+  
+  .login-box-school input {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 40px;
+	margin-top: 6px;
+	width: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+
+  .login-box-school label {
+	font-size: 20px;
+  }
+  
+  .login-box-school a:hover {
+	color: #ffc107;
+	border-radius: 20px;
+  }
+  
+  .error-message {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+}
+
+.error-message::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: rgba(100, 0, 100, 0.4);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.gear {
+	width: 20%;
+	height: auto;
+}
+  
+  table {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #2b2e3d;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	border-collapse: collapse;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  table th:not(:first-child),
+  table td {
+	padding: 10px;
+  }
+  
+  table th {
+	text-align: center;
+  }
+  
+  table td {
+	text-align: center;
+  }
+  
+  thead th {
+	background-color: #002ead; /* Change the color as desired */
+  }
+  
+  thead th:first-child {
+	background-color: #002ead; /* Change the color as desired */
+	border-top-left-radius: 20px; /* Rounded corner on the top-left */
+  }
+  
+  thead th:last-child {
+	background-color: #002ead; /* Change the color as desired */
+	border-top-right-radius: 20px; /* Rounded corner on the top-right */
+  }
+  
+  table tbody tr:hover {
+	background-color: #666;
+  }
+  
+  nav {
+	background-color: #2b2e3d;
+	color: #fff;
+	border-radius: 20px;
+	padding: 7px;
+	width: 90%;
+	margin: auto;
+	text-align: center; /* Added text-align */
+	font-size: 20px;
+  }
+  
+  nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 20px;
+	padding: 10px 15px; /* Adjusted padding */
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	
+  }
+  
+  nav ul a {
+	color: #fff;
+	padding: 10px 25px 25px 50px; /* Adjusted padding */
+	line-height: 20px;
+  }
+  
+  nav li {
+	position: relative;
+	margin-left: 15px;
+	margin-right: 15px;
+  }
+  
+  nav li:hover {
+	background-color: #ffc107;
+	border-radius: 10px;
+  }
+  
+  nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #2b2e3d;
+	border-radius: 0 0 20px 20px;
+  }
+  
+  nav ul ul li {
+	display: block;
+	width: 200px;
+  }
+  
+  nav li:hover > ul {
+	display: inherit;
+  }
+  
+  nav ul ul ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background-color: #2b2e3d;
+	border-radius: 0 20px 20px 20px;
+  }
+  
+  /* Additional styles for dropdown menus */
+  nav ul ul li:hover {
+	background-color: #666;
+  }
+  
+  nav ul ul a {
+	color: #fff;
+	padding: 10px 15px 10px 50px; /* Adjusted padding */
+	line-height: 20px;
+  }
+  
+  nav ul ul li:hover > ul {
+	display: inherit;
+	left: 100%;
+	top: 0;
+  }
+  
+  /* Adjusted styles for dropdown menu links */
+  nav ul ul ul li {
+	position: relative;
+	width: auto;
+	padding: 0;
+	margin: 0;
+  }
+  
+  nav ul ul ul a {
+	padding: 10px;
+	color: #fff;
+	font-size: 16px;
+  }
+  
+  nav ul ul ul li:hover {
+	background-color: #666;
+	border-radius: 0;
+  }
+
+  .err-msg{
+	color: red;
+	margin-bottom: 20px;
+  }
+
+  .suc-msg{
+	color: green;
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+  }
+  
+
+  .inline-button {
+	border: 2px solid #fff;
+	outline: none;
+	height: 30px; /* Adjusted height */
+	background: #2b2e3d;
+	color: #fff;
+	font-size: 14px; /* Adjusted font size */
+	border-radius: 15px; /* Adjusted border radius */
+	width: auto; /* Adjusted width */
+	cursor: pointer;
+	margin-top: 0; /* Removed margin top */
+	box-sizing: border-box;
+	background-color: #2b2e3d;
+	padding: 0 10px; /* Adjusted padding */
+}
+
+.inline-input {
+	border: 2px solid #fff;
+	outline: none;
+	height: 30px;
+	background: #2b2e3d;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 15px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	display: inline-block; /* Added display property */
+	vertical-align: middle; /* Added vertical-align property */
+}
+
+.filter-form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+  }
+  
+  .form-group {
+	flex: 1;
+	margin-right: 10px;
+  }
+
+  .form-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .form-group label {
+	margin-right: 10px;
+  }
+  
+  .form-group .form-control {
+	width: 200px;
+  }
+  
+  .form-group .btn {
+	margin-left: 10px;
+  }
+
+  .form-group-books {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+  }
+  
+  .form-group-books label {
+	flex-basis: 100%;
+  }
+
+  .form-group-books input {
+	flex-basis: calc(33.33% - 10px); /* Adjust the width as needed */
+	margin-right: 10px;
+	margin-bottom: 10px;
+  } 
+
+
+  .review {
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 20px;
+  }
+  
+  .review h3 {
+	margin-top: 0;
+  }
+  
+  .review-details {
+	display: flex;
+	align-items: center;
+  }
+  
+  .rating {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+  }
+  
+  .star {
+	position: relative;
+	font-size: 20px;
+	color: #000000;
+	margin-right: 5px;
+	z-index: 1;
+  }
+  
+  .star::before {
+	content: "\2605";
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: gold;
+	z-index: -1;
+  }
+  
+  .star::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(45deg);
+	z-index: -1;
+  }
+  
+  
+  .filled-star {
+	color: gold;
+	font-size: 20px;
+	margin-right: 5px;
+  }
+  
+  .review-text {
+	margin-bottom: 10px;
+  }
+  
+  .review-meta {
+	margin: 0;
+	font-size: 14px;
+	color: #888;
+  }
+  
+
+  .plain-link {
+    text-decoration: none;
+    color: inherit;
+}
+.link-container {
+    display: flex;
+    justify-content: space-between;
+}
+.link-container {
+    display: flex;
+}
+
+.next-link {
+    text-decoration: none;
+    margin-right: 10px;
+	display: inline-block;
+    cursor: pointer;
+}
+
+
+.left-link {
+    text-decoration: none;
+    display: block;
+	margin-top: 5px;
+	margin-bottom: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+.plain-link:hover {
+    cursor: pointer;
+}
+.review-form .rating {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 10px;
+  }
+  
+  .review-form .stars {
+	display: flex;
+  }
+  
+  .review-form .star {
+	position: relative;
+	font-size: 24px;
+	color: #ccc;
+	margin-right: 5px;
+	cursor: pointer;
+	transition: color 0.3s ease-in-out;
+  }
+  
+  .review-form .star:hover,
+  .review-form .star:hover ~ .star {
+	color: gold;
+  }
+  
+  .review-form .filled-star {
+	position: relative;
+	font-size: 24px;
+	color: gold;
+	margin-right: 5px;
+  }
+  
+  .review-form .review-input {
+	margin-bottom: 10px;
+  }
+  
+  .review-form .review-input label {
+	display: block;
+	color: #fff;
+	margin-bottom: 5px;
+  }
+  
+  .review-form .review-input textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 5px;
+  }
+  
+  .review-form .submit-button {
+	border: 2px solid #fff;
+	outline: none;
+	height: 40px;
+	background: #2b2e3d;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	width: 100%;
+	cursor: pointer;
+	margin-top: 15px;
+	box-sizing: border-box;
+	background-color: #002ead;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+  .review-form .submit-button:hover {
+	background-color: #ffc107;
+	color: #000;
+  }
+
+  
+  .review-form .review-input {
+	width: 50%;
+	height: 200px;
+	resize: none;
+  }
+.review-form .submit-button {
+  width: 150px;
+  height: 30px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
